@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+        ul{
+            list-style-type:none;
+        }
+        li{
+            position:relative;/*给li添加相对定位，否则绝对定位会重叠，span标签也不会显示*/
+        }
+        span{
+            display:block;/*设置span块级元素*/
+            position:absolute;/*设置绝对定位*/
+            left:-30px;
+            width: 16px;
+            height:16px;
+            background:#dd3bdd;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><span></span>床前明月光</li>
+        <li><span></span>疑是地上霜</li>
+        <li><span></span>举头望明月</li>
+        <li><span></span>低头思故乡</li>
+    </ul>
+</body>
+</html>

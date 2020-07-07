@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用服务器字体</title>
+    <style>
+        /*先定义服务器字体*/
+        @font-face{
+            /*定义服务器名称*/
+            font-family:Blazed;
+            /*指定字体路径,这里是该文件的同级目录下，并指定字体格式*/
+            src:url("Blazed.ttf") format("TrueType");
+        }
+        div{margin-left: 200px;font-size: 50px;}
+    </style>
+</head>
+<body>
+<!--在p元素中使用服务器字体-->
+<p style="font-family: Blazed; font-size: 50px;">Happy Birthday!</p>
+<div>生日快乐</div>
+<p></p>
+</body>
+</html>

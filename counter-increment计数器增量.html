@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+        ul{
+            list-style:none;
+            float:left;
+        }
+        li{
+            counter-increment: sex;
+        }
+        li:before{
+            content:counter(sex)".";
+        }
+        ul.part li{
+            counter-increment:order;
+        }
+        ul.part li:before{
+            content:counter(order,upper-roman)".";
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>第一章</li>
+        <li>第二章</li>
+        <li>第三章</li>
+        <li>第四章</li>
+    </ul>
+    <ul class="part">
+        <li>内容</li>
+        <li>内容</li>
+        <li>内容</li>
+        <li>内容</li>
+    </ul>
+</body>
+</html>

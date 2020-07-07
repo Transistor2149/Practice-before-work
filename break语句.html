@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>break语句使用实例</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script type="text/javascript">
+        stop:{
+            for(var row =1;row<=10; ++row)/*最多循环10次*/
+            {
+                for(var column=1;column<=6;++column)/*每行最多6个*号*/
+                    {if(row == 5)/*如果循环次数达到了5次*/
+                        break stop;
+                    document.write("*");
+                }
+             document.write("<p>");
+            }
+            document.write("这行无法显示");
+        }
+        document.write("结束script语句");
+    </script>
+</body>
+</html>

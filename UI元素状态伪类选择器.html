@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+        input[type="text"]:hover{/*鼠标指针经过（悬停时）*/
+            background-color:hotpink;
+        }
+        input[type="text"]:focus{/*鼠标指针获得焦点（点击）或进行文字输入时*/
+            background-color:yellow;
+        }
+        input[type="text"]:active{/*鼠标指针左键按住不动时*/
+            background-color:red;
+        }
+        input[type="checkbox"]:checked{
+            outline:2px solid palevioletred;
+        }
+        input[type="radio"]:checked{
+            outline:2px solid palegreen;
+        }
+        input[type="text"]::selection{
+            color:powderblue;
+            background-color:green;
+        }
+        ::selection{
+            color:indianred;
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+手机号：<input type="text" id="txt" name="">
+<li>HTML<input type="checkbox" /></li>
+<li>CSS<input type="checkbox" /></li>
+<li>MALE<input type="radio" name="sex" id="male"/></li>
+<li>FEMALE<input type="radio" name="sex" id="female"/></li>
+<li><input type="text" value="测试表单" /></li>
+<p>HTML基础知识</p>
+</body>
+</html>

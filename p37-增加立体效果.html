@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+        .show{
+            width: 150px;
+            height:50px;
+            text-align: center;
+            line-height:50px;/*设置垂直居中*/
+            border-right:green 20px solid; /* 设置右边框 */
+            border-bottom:#666666 20px solid;/*设置底边框*/
+            border-left:blue 20px solid;/*设置左边框*/
+            border-top:#dddddd 20px solid;/*设置上边框*/
+            background-color:orange;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" name="" value="动态增加立体效果" onclick="change()"><hr>
+    <div id="box">
+        立体效果
+    </div>
+</body>
+<script type="text/javascript">
+//定义change函数
+    function change(){
+        document.getElementById("box").className="show";
+    }
+</script>
+</html>

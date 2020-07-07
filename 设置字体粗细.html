@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+    *{
+        margin:0;
+        padding:0;/*设置页面中所有控件的内外边距为0*/
+    }
+        p:first-of-type{/*匹配同级元素的第1个元素*/
+         font-weight:bold;/*设置字体加粗*/
+         font:normal bold 20px 宋体;/*设置字体复合属性*/
+        }
+        p:nth-of-type(2){/*匹配同级元素的第2个元素*/
+        font-weight:bolder;/*定义更粗的字体*/
+        }
+        p:nth-last-of-type(4){/*匹配同级元素的倒数第1个元素*/
+            font-weight:lighter;/*定义更细的字体*/
+            color:blue;
+        }
+        .p1{
+            font-style:normal;
+            font-size:30px;
+            font-family:微软雅黑;
+            line-height:15px;
+            border:1px solid red;/*设置边框*/
+        }
+        .p2{
+            font-style:italic;/*设置斜体的字体*/
+            font-size:large;/*large相对于父元素中字体的尺寸进行相对增大*/
+            font-family:华文彩云;
+            line-height:30px;
+            border:1px solid red;
+        }
+        .p3{
+            font-style:oblique;/*设置倾斜的字体*/
+            font-size:smaller;/*smaller相对于父元素中字体的尺寸进行相对减小*/
+            font-family:宋体;
+            line-height:45px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p>做优雅的自己。</p>
+    <p>放手不属于自己的事物。</p>
+    <p>做优雅的自己。</p>
+     <p class="p1">喜欢一个人，是一种心情。</p>
+     <p class="p2">喜欢一个人，是一种心情。</p>
+     <p class="p3">喜欢一个人，是一种心情。</p>
+</body>
+</html>

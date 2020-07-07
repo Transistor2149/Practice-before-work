@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+    h1{
+        position:fixed;
+        left:200px;
+        top:500px;
+    }
+        .box1{
+            position:absolute;
+            left:450px;
+            top:50px;
+        }
+        .box2{
+            position:absolute;
+            left:450px;
+            top:50px;
+        }
+        .bob{
+            position: relative;
+            left:500px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>固定定位123456</h1>
+<!-- 父元素box没有定位，box1相当于html定位 -->
+    <div class="box">
+        <div class="box1">
+            <img src="images/1.jpg" alt="" width="600px" height="600px">
+        </div>
+    </div>
+    <!-- 父元素box2有定位，box1相当于box2的定位 -->
+    <div class="box2">
+        <div class="box1"><img src="images/2.jpg" alt="" width="600px" height="600px" /></div>
+    </div>
+    <div><img src="images/3.jpg" alt="" width="400px" height="400px"/></div>
+    <div class="bob"><img src="images/3.jpg" alt="" width="400px" height="400px"/></div>
+    <div><img src="images/3.jpg" alt="" width="400px" height="400px"/></div>
+</body>
+</html>

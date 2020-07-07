@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+        ul{
+            list-style:none;/*去掉ul的项目符号*/
+        }
+        li:before{
+            content:'css课程：';
+            color:indianred;
+        }
+        ul.new{
+            list-style:none;
+        }
+        ul.new>li:before{
+            content:url("images/00.jpg");
+        }
+        ul#part>li.parts:after{
+            content:url("images/00.jpg");
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>第一章内容</li>
+        <li>第二章内容</li>
+        <li>第三章内容</li>
+        <li>第四章内容</li>
+    </ul>
+    <ul class="new">
+        <li>第1章内容</li>
+        <li>第2章内容</li>
+        <li>第3章内容</li>
+    </ul>
+    <ul id="part">
+        <li>动感光波拳</li>
+        <li>动感光波拳</li>
+        <li class="parts">动感光波拳</li>
+        <li class="parts">动感光波拳</li>
+    </ul>
+</body>
+</html>

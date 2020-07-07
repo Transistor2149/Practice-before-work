@@ -1,0 +1,12 @@
+/*
+* @Author: Marte
+* @Date:   2020-02-24 18:47:30
+* @Last Modified by:   Marte
+* @Last Modified time: 2020-02-24 18:59:16
+*/
+#box p{
+    color: blue;
+}
+#box .box{
+    color:yellow;
+}

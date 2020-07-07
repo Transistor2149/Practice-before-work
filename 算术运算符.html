@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+
+
+</head>
+<body>
+    <form method="post" action="#">
+        <input type="button" name="#" value="算术运算" onclick="math()">
+    </form>
+
+<script type="text/javascript">
+        function math(){
+            var par=25;
+            document.write("数值X=" + par + "<br>");
+
+            par = par+8;
+            document.write("加8结果：" + par + "<br>");
+
+            par = par -9;
+            document.write("减9结果：" + par + "<br>");
+
+            par = par*3;
+            document.write("乘3结果：" + par + "<br />");
+
+            par = par/6;
+            document.write("除6结果：" + par + "<br />");
+
+            par = par%7;
+            document.write("与7取余结果：" + par + "<br />");
+
+            par++;
+            document.write("自增运算结果：" + par + "<br />");
+
+            par--;
+            document.write("自减运算结果：" + par + "<br />");
+
+            var test1=par++;
+            document.write("自增运算符在后的结果运算：" + test1 +",自增之后的值：" + par + "<br />");
+
+            var test2=par--;
+            document.write("自减运算符在后的结果运算：" + test2 +",自减之后的值：" + par + "<br >")
+        }
+</script>
+</body>
+</html>

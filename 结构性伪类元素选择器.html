@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+    :root{/*匹配整个文档的根元素*/
+        background:yellow;
+    }
+    p:nth-child(2){/*匹配其父元素的第n个子元素*/
+        color:red;
+        background:white;
+    }
+    p:nth-last-child(2){/*匹配其父元素的倒数第n个子元素*/
+        background-color:skyblue;
+    }
+    p:nth-of-type(3){/*匹配同级元素的第n个元素*/
+        color:orange;
+        background:whitesmoke;
+    }
+    p:first-child{
+        background:blueviolet;
+    }
+    p:last-child{
+        background:darkorange;
+    }
+
+    </style>
+</head>
+<body>
+<p>结构性伪类选择器</p>
+<p>结构性伪类选择器</p>
+<p>结构性伪类选择器</p>
+<p>结构性伪类选择器</p>
+<p>结构性伪类选择器</p>
+<p>结构性伪类选择器</p>
+</body>
+</html>

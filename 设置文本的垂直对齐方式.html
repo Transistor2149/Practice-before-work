@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+        div{
+            width:400px;
+            height:80px;
+            border:1px solid red;
+            display: table;/* 设置div为块级表格来显示 */
+        }
+        p{
+            text-align: center;
+            display:table-cell;/*是子元素成为表格单元格*/
+        }
+        .p1{
+            vertical-align:middle;/*设置p1文本垂直居中对齐*/
+        }
+        .p2{
+            vertical-align:top;/*p2的文本顶端对齐*/
+        }
+        .p3{
+            vertical-align:bottom;/*p3文本底端对齐*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="p1">做任何事情步骤1都要树立一个目标。</p>
+    </div>
+    <div>
+        <p class="p2">做任何事情步骤1都要树立一个目标。</p>
+    </div>
+    <div>
+        <p class="p3">做任何事情步骤1都要树立一个目标。</p>
+    </div>
+</body>
+</html>
