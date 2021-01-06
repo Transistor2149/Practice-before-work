@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">//第二部创建空函数，第四步填充函数行为
+			function getSecret(file,secretPassword){//此函数在密码核对正确是返回文件的内容
+				file.opened = file.opened+1;
+				if(secretPassword == file.password){
+					return file.contents;
+				}else{
+					return "密码错误！"
+				}
+			}
+			
+			function setSecret(file,secretPassword,newContent){//修改文件内容，并将访问次数重置为零
+				if(secretPassword == file.password){
+					file.opened = 0;
+					file.contents = newContent; 
+				}
+			}
+			
+			var superSecretFile = {//首先创建对象
+				level: "classified",
+				opened:0,
+				password:2,
+				contents:"伊芙琳博士下一次会面是在Detroit。"
+			};
+			var Secret = getSecret(superSecretFile,2);//第三步调用函数，给函数规定实参
+			console.log(Secret);
+			
+			setSecret(superSecretFile,2,"伊芙琳女士下一次见面地点是在Philadelphia");
+			Secret = getSecret(superSecretFile,2);
+			console.log(Secret);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
