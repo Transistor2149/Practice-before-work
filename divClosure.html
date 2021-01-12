@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>计数器按钮</title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var count = 0;
+				var message = "You click me ";
+				var divs = document.getElementById("messages");
+				
+				var buttons = document.getElementById("clickme");
+				buttons.onclick = function(){
+					count++;
+					divs.innerHTML = message + count + " times!";
+				}
+			}
+		</script>
+		<style type="text/css">
+			body,button{
+				margin: 10px;
+			}
+			div{
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<button id="clickme">Click me</button>
+		<div id="messages"></div>
+	</body>
+</html>
