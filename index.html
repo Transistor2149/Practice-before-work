@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-3.5.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// JSON 数据的书写格式是：名称/值对。			
+			// 名称/值对包括字段名称（在双引号中），后面写一个冒号，然后是值：
+			$(document).ready(function(){
+				var JsonObject = {
+					"name":"Bill",
+					"Age":"56",
+					"street":"Fifth Avenue New York 666",
+					"phone":"555-189432184"
+				};
+				
+				document.getElementById("jName").innerHTML = JsonObject.name;
+				document.getElementById("jAge").innerHTML = JsonObject.Age;
+				document.getElementById("jStreet").innerHTML = JsonObject.street;
+				document.getElementById("jPhone").innerHTML = JsonObject.phone;
+			});
+		</script>
+	</head>
+	<body>
+		<h2>JS中创建JSON对象</h2>
+		<p>
+			Name:<span id="jName"></span><br/>
+			Age:<span id="jAge"></span><br/>
+			Street:<span id="jStreet"></span><br/>
+			Phone:<span id="jPhone"></span><br/>
+		</p>
+	</body>
+</html>

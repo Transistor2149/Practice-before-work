@@ -3,19 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<script src="js/new_file.json" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.5.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// var obj = eval("(" + txt + ")");
+				var obj = JSON.parse(txt);//函数parse()是JSON的解析器，用于将json文本转换为JS对象
+				document.getElementById("FName").innerHTML = obj.employ[1].firstName;
+				document.getElementById("LName").innerHTML = obj.employ[1].lastName;
+				
+				obj.employ[0].firstName = "Start";
+				console.log(obj.employ[0].firstName);
+				document.getElementById("FName1").innerHTML = obj.employ[0].firstName;
+				document.getElementById("LName1").innerHTML = obj.employ[0].lastName;
+			});
+		</script>
 	</head>
 	<body>
-		<p>创建JS对象</p>
-		<p id="demo"></p>
-		<script type="text/javascript">
-			var person = {
-				//给对象添加属性
-				firstName:"刘",
-				lastName:"家辉",
-				age     :"3",
-				eyeColor:"黑",
-			}
-			document.getElementById("demo").innerHTML = person.firstName + person.lastName + "现在" +person.age + "岁了！<br>" + "眼睛是：" + person.eyeColor + "色的。";
-		</script>
+		<h2>通过 JSON 字符串来创建对象</h2>
+		<p>
+			First Name:<span id="FName"></span><br>
+			Last Name:<span id="LName"></span><br>
+			First Name:<span id="FName1"></span><br>
+			Last Name:<span id="LName1"></span><br>
+		</p>
 	</body>
 </html>

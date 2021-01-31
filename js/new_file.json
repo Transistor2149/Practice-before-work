@@ -1,0 +1,9 @@
+var txt = '{"employ" : [' + 
+					'{"firstName":"Bill","lastName":"Gates"},' + 
+					'{"firstName":"George","lastName":"Bush"},' + 
+					'{"firstName":"Thomas","lastName":"Carter"}]}';
+
+// var txt = '{ "employees" : [' +
+// '{ "firstName":"Bill" , "lastName":"Gates" },' +
+// '{ "firstName":"George" , "lastName":"Bush" },' +
+// '{ "firstName":"Thomas" , "lastName":"Carter" } ]}';
